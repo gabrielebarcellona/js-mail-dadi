@@ -16,7 +16,7 @@ Consigli del giorno:
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"*/
 
-
+const mail = prompt('inserisci la tua mail')
 
  const ListaMail = [
     'pinopinocchio@gmail.com',
@@ -27,6 +27,7 @@ Consigli del giorno:
 
  for(let i = 0; i < ListaMail.length;i++){
     console.log(ListaMail[i])
+    
  }
 
 
