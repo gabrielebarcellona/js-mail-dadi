@@ -1,0 +1,19 @@
+#btn-play{
+    background-color: rgb(45, 69, 69);
+    color: white;
+    height: 40px;
+    width: 50px;
+    border: 2px solid  rgb(45, 69, 69) ;
+    border-radius: 25px;
+}
+
+#btn-play:hover{
+    border:  rgb(52, 167, 167) ;
+    background-color: rgb(52, 167, 167);
+    height: 60px;
+    width: 70px;
+}
+
+#btn-play:active{
+    background-color: rgb(45, 69, 69);
+}
