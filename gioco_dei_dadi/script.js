@@ -12,15 +12,36 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"*/
 
 
-const number1 = Math.floor(Math.random()*6)+ 1
-const number2 =  Math.floor(Math.random()*6)+ 1
+
+
+const eleButton = document.getElementById('btn-play') 
+const eleScoreUser = document.getElementById('score-player') 
+const eleScoreComputer = document.getElementById('score-computer') 
+const eleOutput = document.querySelector('.output')
+
+
+
+eleButton.addEventListener('click',function(){
+    const number1 = Math.floor(Math.random()*6)+ 1
+    const number2 =  Math.floor(Math.random()*6)+ 1
+
+
+    eleScoreUser.innerHTML = number1;
+    eleScoreComputer.innerHTML = number2
+
 
 console.log(number1 , number2)
 
+let message;
+
 if(number1 > number2){
-    console.log('ha vinto il giocatore')
+  message = 'hai vinto'
 }else if (number2 > number1){
-    console.log('ha vinto il computer')
+    message = 'ha vinto il computer'
 }else{
-    console.log('avete pareggiato')
+    message = 'avete pareggiato'
 }
+
+eleOutput.innerHTML = message;
+console.log(message)
+})
