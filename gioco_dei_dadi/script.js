@@ -11,3 +11,16 @@ Consigli del giorno:
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"*/
 
+
+const number1 = Math.floor(Math.random()*6)+ 1
+const number2 =  Math.floor(Math.random()*6)+ 1
+
+console.log(number1 , number2)
+
+if(number1 > number2){
+    console.log('ha vinto il giocatore')
+}else if (number2 > number1){
+    console.log('ha vinto il computer')
+}else{
+    console.log('avete pareggiato')
+}
